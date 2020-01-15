@@ -41,6 +41,10 @@ function bodyGeladen(){
         //Browser
         console.log("Im Browser");
         initApp();
+            if ('serviceWorker' in navigator) {
+                console.log("Service Worker läuft");
+                navigator.serviceWorker.register('service-worker.js');
+              } //service Worker implementiert
     }
 } 
 
@@ -57,4 +61,5 @@ function initApp(){
 }
 
 document.addEventListener("deviceready", initApp, false);
+
 
