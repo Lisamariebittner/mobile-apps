@@ -1,0 +1,4 @@
+node_modules
+platforms
+!node_modules/framework7/css/framework7.bundle.min.css
+!node_modules/framework7/js/framework7.bundle.min.js
